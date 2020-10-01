@@ -119,13 +119,13 @@ section ul {
 	margin: 0;
 }
 
-section dl dd+dd {
+section dl dd+dd,
+section .item+.item {
 	margin-top: 6px;
 }
 
 section dl dd,
 section .item {
-	width: 100%;
 	margin-left: 10px;
 	display: flex;
 	justify-content: space-between;
