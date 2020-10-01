@@ -120,20 +120,20 @@ section ul {
 }
 
 section dl dd+dd,
-section .item+.item {
+section span+span {
 	margin-top: 6px;
 }
 
 section dl dd,
-section .item {
+section span {
 	margin-left: 10px;
 	display: flex;
 	justify-content: space-between;
 }
 
-section dl dd .date,
-section dl dd .level {
-	opacity: 0.6;
+section .date,
+section .level {
+	opacity: 0.7;
 }
 
 section .tabbed+.subtitle {
