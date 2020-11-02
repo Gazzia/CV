@@ -1,0 +1,29 @@
+{
+	"name": "gazzia29.github.io",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "snowpack dev",
+		"build": "snowpack build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Gazzia29/gazzia29.github.io.git"
+	},
+	"author": "Joseph Allain",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Gazzia29/gazzia29.github.io/issues"
+	},
+	"homepage": "https://github.com/Gazzia29/gazzia29.github.io#readme",
+	"dependencies": {
+		"svelte": "^3.29.4"
+	},
+	"devDependencies": {
+		"@snowpack/app-scripts-svelte": "^1.9.2",
+		"@snowpack/plugin-dotenv": "^2.0.4",
+		"@snowpack/plugin-run-script": "^2.2.0",
+		"@snowpack/plugin-svelte": "^3.2.0",
+		"snowpack": "^2.16.1"
+	}
+}
