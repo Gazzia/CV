@@ -23,7 +23,7 @@ function create_fragment(ctx) {
 		c() {
 			header = element("header");
 
-			header.innerHTML = `<div id="avatar" class="svelte-bsq0m1"><img src="../assets/avatar.webp" alt="" class="svelte-bsq0m1"/></div> 
+			header.innerHTML = `<div id="avatar" class="svelte-bsq0m1"><img src="https://raw.githubusercontent.com/Gazzia29/gazzia29.github.io/master/build/assets/avatar.webp" alt="" class="svelte-bsq0m1"/></div> 
 	<div id="title" class="svelte-bsq0m1"><h1 class="svelte-bsq0m1">Joseph Allain</h1> 
 		<h2 class="svelte-bsq0m1">Curriculum Vitae</h2></div>`;
 
