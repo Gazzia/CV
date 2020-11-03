@@ -25,11 +25,27 @@
 		<Item text="Bac économique et social" date="2012-2016" />
 		<Item text="Brevet des collèges" date="2008-2012" />
 	</Box>
-	<Box title="Mes compétences">
+	<Box title="Dev skills">
 		<ItemList title="Web">
-			<LI text="HTML5, CSS/SASS" />
-			<LI text="Javascript, Svelte" />
+			<LI text="HTML5, CSS/SASS responsive" />
+			<LI text="Javascript, Svelte.js" />
 			<LI text="Google Firebase" />
+		</ItemList>
+		<ItemList title="Node">
+			<LI text="Module Bundlers (Rollup, Snowpack..)" />
+			<LI text="Electron" />
+			<LI text="Google Firebase" />
+		</ItemList>
+		<ItemList title="Java">
+			<LI text="Maven" />
+		</ItemList>
+	</Box>
+	<Box title="Skills">
+		<ItemList title="Soft">
+			<LI text="Pédagogie et écoute" />
+			<LI text="Curiosité" />
+			<LI text="Investissement" />
+			<LI text="Autonomie" />
 		</ItemList>
 		<ItemList title="Langues">
 			<LI text="Anglais" otherData="Bon" />
