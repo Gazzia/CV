@@ -15,7 +15,6 @@
 	"bugs": {
 		"url": "https://github.com/Gazzia29/gazzia29.github.io/issues"
 	},
-	"homepage": "https://cv-swart.vercel.app",
 	"dependencies": {
 		"svelte": "^3.29.4"
 	},
