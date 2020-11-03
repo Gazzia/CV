@@ -13,7 +13,8 @@
 		box-shadow: 0 0.5px 1.3px rgba(0, 0, 0, 0.008), 0 1.1px 3.1px rgba(0, 0, 0, 0.012),
 			0 2.1px 5.9px rgba(0, 0, 0, 0.015), 0 3.8px 10.5px rgba(0, 0, 0, 0.018),
 			0 7.1px 19.6px rgba(0, 0, 0, 0.022), 0 17px 47px rgba(0, 0, 0, 0.03);
-		gap: 6px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.title {
@@ -30,6 +31,8 @@
 		gap: 6px;
 		display: flex;
 		flex-direction: column;
+		flex: 1 1 auto;
+		justify-content: space-around;
 	}
 
 	.boxContent.dated {
@@ -38,7 +41,7 @@
 	}
 </style>
 
-<section in:slide={{delay: 200}}>
+<section in:slide={{delay: 600}}>
 	<h3 class="title highlight">{title}</h3>
 	<div class="boxContent" class:dated>
 		<slot />
