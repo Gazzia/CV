@@ -8,6 +8,7 @@
 		flex-direction: column;
 		grid-gap: 6px;
 		margin: 0;
+		margin-left: 10px;
 	}
 	dl dt {
 		font-weight: 600;
