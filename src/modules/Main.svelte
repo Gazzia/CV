@@ -20,7 +20,7 @@
 
 <main in:fade>
 	<Box title="Ma formation" dated full>
-		<Item text="Simplon - Dev. web/Java" date="2020" />
+		<Item text="Simplon - Développement web/Java [en cours]" date="2020" />
 		<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
 		<Item text="Bac économique et social" date="2012-2016" />
 	</Box>
@@ -57,12 +57,11 @@
 		</ItemList>
 	</Box>
 	<Box title="Parcours" dated>
-		<Item text="Entrée chez Simplon" date="Sept 2020" />
-		<Item text="Maîtrise de la plupart du language Javascript" />
+		<Item text="Formation chez Simplon" date="Sept 2020" />
+		<Item text="Maîtrise de la plupart du langage Javascript" />
 		<Item text="Développement de webapps, découverte de Node" />
 		<Item text="Premières expériences en entreprise" date="2017" />
-		<Item text="Développement de petites pages statiques en HTML/CSS" />
-		<Item text="Sortie de la fac" date="2016-17" />
+		<Item text="Développement de petites pages statiques en HTML/CSS" date="2016-17" />
 	</Box>
 	<Box title="Mes loisirs">
 		<Item solo text="Lecture" />
