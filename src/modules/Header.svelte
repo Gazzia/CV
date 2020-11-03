@@ -38,10 +38,10 @@
 	#title {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		/* align-items: center; */
 		flex-direction: column;
 		margin-left: 30px;
-		text-align: center;
+		/* text-align: center; */
 	}
 	h1 {
 		color: #6254bd;
@@ -54,13 +54,9 @@
 </style>
 
 <header in:fade>
-	<div id="avatar">
-		<img
-			src="https://raw.githubusercontent.com/Gazzia29/gazzia29.github.io/master/build/assets/avatar.webp"
-			alt="" />
-	</div>
+	<div id="avatar"><img src="assets/avatar.webp" alt="" /></div>
 	<div id="title">
 		<h1>Joseph Allain</h1>
-		<h2>Curriculum Vitae</h2>
+		<h2>Développeur Web Full Stack JS</h2>
 	</div>
 </header>
