@@ -15,7 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/Gazzia29/gazzia29.github.io/issues"
 	},
-	"homepage": "https://github.com/Gazzia29/gazzia29.github.io#readme",
+	"homepage": "https://gazzia29.github.io/build",
 	"dependencies": {
 		"svelte": "^3.29.4"
 	},
