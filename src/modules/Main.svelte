@@ -4,7 +4,6 @@
 	import Item from "./Item.svelte";
 	import ItemList from "./Item_List.svelte";
 	import LI from "./Item_LI.svelte";
-	import {pays} from "../data.js";
 </script>
 
 <style>
