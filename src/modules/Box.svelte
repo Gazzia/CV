@@ -2,6 +2,7 @@
 	import {slide} from "svelte/transition";
 	export let title = "";
 	export let dated = false;
+	export let full = false;
 </script>
 
 <style>
@@ -15,8 +16,12 @@
 			0 7.1px 19.6px rgba(0, 0, 0, 0.022), 0 17px 47px rgba(0, 0, 0, 0.03);
 		display: flex;
 		flex-direction: column;
+		flex: 1 1 auto;
 	}
 
+	.full {
+		width: 100%;
+	}
 	.title {
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
@@ -36,12 +41,12 @@
 	}
 
 	.boxContent.dated {
-		border-right: 1px dashed rgba(61, 56, 53, 0.3);
+		border-right: 1px dashed rgba(61, 56, 53, 0.65);
 		padding-right: 10px;
 	}
 </style>
 
-<section in:slide={{delay: 600}}>
+<section in:slide={{delay: 600}} class:full>
 	<h3 class="title highlight">{title}</h3>
 	<div class="boxContent" class:dated>
 		<slot />

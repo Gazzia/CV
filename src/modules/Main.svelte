@@ -9,27 +9,27 @@
 
 <style>
 	main {
-		display: grid;
-		grid-gap: 25px;
+		gap: 25px;
 		padding: 40px 25px;
-		grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 		max-width: 900px;
 		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
 	}
 </style>
 
 <main in:fade>
-	<Box title="Ma formation" dated>
+	<Box title="Ma formation" dated full>
 		<Item text="Simplon - Dev. web/Java" date="2020" />
 		<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
 		<Item text="Bac économique et social" date="2012-2016" />
-		<Item text="Brevet des collèges" date="2008-2012" />
 	</Box>
 	<Box title="Dev skills">
 		<ItemList title="Web">
 			<LI text="HTML5, CSS/SASS responsive" />
 			<LI text="Javascript, Svelte.js" />
 			<LI text="Google Firebase" />
+			<LI text="Vue.js" />
 		</ItemList>
 		<ItemList title="Node">
 			<LI text="Module Bundlers (Rollup, Snowpack..)" />
@@ -38,7 +38,9 @@
 		</ItemList>
 		<ItemList title="Java">
 			<LI text="Maven" />
+			<LI text="JDK 1.8" />
 		</ItemList>
+		<Item solo text="MySQL" />
 	</Box>
 	<Box title="Skills">
 		<ItemList title="Soft">
@@ -54,24 +56,22 @@
 			<LI text="Esperanto" otherData="Notions" />
 		</ItemList>
 	</Box>
-	<Box title="Parcours professionnel" dated>
-		<Item text="Manut/Aide-Machine" date="Sept. 2019 - 2020" />
-		<Item text="Contrats agricoles" date="Avril-Juin 2019" />
-		<Item text="Manut. (livrais° meubles)" date="2019" />
-		<Item text="Aide dentaire" date="Nov 2018-Jan 2019" />
-		<Item text="Contrat agricole" date="Août-Sept 2018" />
-		<Item text="Garde d'enfant" date="2017-2018" />
-		<Item text="Commis de cuisine/Crêpier" date="2017" />
+	<Box title="Parcours" dated>
+		<Item text="Entrée chez Simplon" date="Sept 2020" />
+		<Item text="Maîtrise de la plupart du language Javascript" />
+		<Item text="Développement de webapps, découverte de Node" />
+		<Item text="Premières expériences en entreprise" date="2017" />
+		<Item text="Développement de petites pages statiques en HTML/CSS" />
+		<Item text="Sortie de la fac" date="2016-17" />
 	</Box>
 	<Box title="Mes loisirs">
-		<ItemList title="Voyages">
-			{#each pays as item}
-				<LI text={item} />
-			{/each}
-		</ItemList>
+		<Item solo text="Lecture" />
+		<Item solo text="Cinéma de niche" />
 		<ItemList title="Web">
 			<LI text="Développement de webapps pour des projets personnels" />
 		</ItemList>
-		<Item text="Randonnée" />
+		<Item solo text="Voyages" />
+		<Item solo text="Randonnée" />
+		<Item solo text="Aventure !" />
 	</Box>
 </main>
