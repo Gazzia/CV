@@ -14,11 +14,17 @@
 		margin: auto;
 		display: flex;
 		flex-wrap: wrap;
+		position: relative;
+		z-index: 3;
 	}
 </style>
 
 <main in:fade>
-	<Box title="Ma formation" dated full>
+	<Box centered full>
+		Actuellement en formation à l'école Simplon, je recherche un stage d'un mois dans le
+		développement web ou logiciel à Nantes.
+	</Box>
+	<Box title="études" dated full>
 		<Item text="Simplon - Développement web/Java [en cours]" date="2020" />
 		<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
 		<Item text="Bac économique et social" date="2012-2016" />
@@ -55,11 +61,12 @@
 			<LI text="Esperanto" otherData="Notions" />
 		</ItemList>
 	</Box>
-	<Box title="Parcours" dated>
+	<Box title="Parcours" dated spaced>
 		<Item text="Formation chez Simplon" date="Sept 2020" />
+		<Item text="Nombreux emplois, majoritairement dans la manutention" />
 		<Item text="Maîtrise de la plupart du langage Javascript" />
 		<Item text="Développement de webapps, découverte de Node" />
-		<Item text="Premières expériences en entreprise" date="2017" />
+		<Item text="Premières expériences en entreprise, dans la restauration" date="2017" />
 		<Item text="Développement de petites pages statiques en HTML/CSS" date="2016-17" />
 	</Box>
 	<Box title="Mes loisirs">
