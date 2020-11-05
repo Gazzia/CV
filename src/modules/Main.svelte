@@ -42,10 +42,6 @@
 <main in:fade>
 	{#if $openTab == 'infos'}
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
-			<!-- <Box centered full>
-				Actuellement en formation à l'école Simplon, je recherche un stage d'un mois dans le
-				développement web ou logiciel à Nantes.
-			</Box> -->
 			<Box title="études" dated full>
 				<Item text="Simplon - Développement web/Java [en cours]" date="2020" />
 				<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
