@@ -1,12 +1,12 @@
 <script>
 	import {fade} from "svelte/transition";
+	import {openTab} from "../stores.js";
 </script>
 
 <style>
 	header {
 		position: relative;
 		width: 100%;
-		height: 200px;
 		display: flex;
 		background-color: white;
 		justify-content: center;
@@ -20,20 +20,36 @@
 	}
 	.info {
 		display: flex;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
-	.button {
+	.desc {
+		width: 450px;
+		margin-bottom: 17px;
+		text-align: center;
+		opacity: 0.6;
+		letter-spacing: 0.4px;
+		font-size: 14px;
+		border-bottom: 1px solid #80808040;
+		padding-bottom: 20px;
+	}
+	.tabs {
+		display: flex;
+		gap: 40px;
+	}
+	.tab {
 		color: #6254bd;
-		padding: 10px 15px;
-		box-shadow: 0 0.4px 1.2px rgba(0, 0, 0, 0.024), 0 1.1px 3.3px rgba(0, 0, 0, 0.035),
-			0 2.7px 7.8px rgba(0, 0, 0, 0.046), 0 9px 26px rgba(0, 0, 0, 0.07);
-		border-radius: 6px;
+		text-transform: uppercase;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.tab.active {
+		border-bottom: 1px solid #6254bd;
 	}
 	#avatar {
 		flex: 0 0 auto;
 		display: flex;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		border-radius: 50%;
 		position: relative;
 		overflow: hidden;
@@ -73,5 +89,26 @@
 			<h2>Développeur Web Full Stack JS</h2>
 		</div>
 	</div>
-	<div class="button">Me contacter</div>
+	<div class="desc">
+		Actuellement en formation à l'école Simplon, je recherche un stage d'un mois dans le
+		développement web ou logiciel à Nantes.
+	</div>
+	<div class="tabs">
+		<div
+			class="tab"
+			class:active={$openTab == 'infos'}
+			on:click={() => {
+				$openTab = 'infos';
+			}}>
+			Infos
+		</div>
+		<div
+			class="tab"
+			class:active={$openTab == 'contact'}
+			on:click={() => {
+				$openTab = 'contact';
+			}}>
+			Contact
+		</div>
+	</div>
 </header>

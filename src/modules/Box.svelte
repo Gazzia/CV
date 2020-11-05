@@ -61,13 +61,13 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		font-weight: 500;
+		/* font-weight: 500; */
 		letter-spacing: 0.3px;
 		color: rgba(61, 56, 53, 0.89);
 	}
 </style>
 
-<section in:slide={{delay: 600}} class:full class:centered>
+<section class:full class:centered>
 	{#if title}
 		<h3 class="title highlight">{title}</h3>
 	{/if}

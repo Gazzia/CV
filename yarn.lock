@@ -6252,6 +6252,11 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-google-maps-embed@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/svelte-google-maps-embed/-/svelte-google-maps-embed-0.1.1.tgz#8bb6a4e9bbb57ae9383f1558878bc611f95311f0"
+  integrity sha512-w0DxXhtrmrT2MfkTxjBq0b3bTC7iIX8aZTL9Hb58ETNUZBqrQPDhuw5bMzd7r2zDT+p7hAtpv83+QeKwlpzkCA==
+
 svelte-hmr@^0.11.2:
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.11.5.tgz#b296a7e4ecbafe076461071deafd2da5019febb2"
