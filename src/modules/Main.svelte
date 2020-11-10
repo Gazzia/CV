@@ -37,6 +37,14 @@
 		font-size: 14px;
 		text-transform: uppercase;
 	}
+	.phone {
+		columns: 5;
+		-webkit-columns: 5;
+		-moz-columns: 5;
+		column-gap: 0.1em;
+		-webkit-column-gap: 0.1em;
+		-moz-column-gap: 0.1em;
+	}
 </style>
 
 <main in:fade>
@@ -49,21 +57,20 @@
 			</Box>
 			<Box title="Dev skills">
 				<ItemList title="Web">
-					<LI text="HTML5, CSS/SASS responsive" />
-					<LI text="Javascript, Svelte.js" />
-					<LI text="Google Firebase" />
-					<LI text="Vue.js" />
+					<LI text="HTML5, CSS/SASS responsive" otherData="Maîtrise" />
+					<LI text="Javascript, Svelte.js" otherData="Très bon" />
+					<LI text="Google Firebase" otherData="Très bon" />
+					<LI text="Vue.js" otherData="Notions" />
 				</ItemList>
 				<ItemList title="Node">
-					<LI text="Module Bundlers (Rollup, Snowpack..)" />
-					<LI text="Electron" />
-					<LI text="Google Firebase" />
+					<LI text="Module Bundlers (Rollup, Snowpack..)" otherData="Bon" />
+					<LI text="Electron" otherData="Bon" />
 				</ItemList>
 				<ItemList title="Java">
-					<LI text="Maven" />
-					<LI text="JDK 1.8" />
+					<LI text="Maven" otherData="Notions" />
+					<LI text="JDK 1.8" otherData="Notions" />
 				</ItemList>
-				<Item solo text="MySQL" />
+				<Item solo text="MySQL" otherData="Bon" />
 			</Box>
 			<Box title="Skills">
 				<ItemList title="Soft">
@@ -102,7 +109,7 @@
 		<div class="tab" in:fly|local={{x: 500, delay: 300}} out:fly|local={{x: 500}}>
 			<Box centered>
 				<div class="elem">
-					<div class="label">Téléphone</div>
+					<div class="label phone">Téléphone</div>
 					<div class="value">0634394117</div>
 				</div>
 				<div class="elem">
