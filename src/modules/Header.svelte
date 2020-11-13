@@ -91,7 +91,7 @@
 	</div>
 	<div class="desc">
 		Actuellement en formation à l'école Simplon, je recherche un stage dans le développement web
-		ou logiciel à Nantes pour le mois janvier.
+		ou logiciel à Nantes pour le mois de janvier.
 	</div>
 	<div class="tabs">
 		<div

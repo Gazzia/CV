@@ -51,7 +51,7 @@
 	{#if $openTab == 'infos'}
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
 			<Box title="études" dated full>
-				<Item text="Simplon - Développement web/Java [en cours]" date="2020" />
+				<Item text="Simplon - Titre pro. Web/Web mobile Bac+2" date="sept. 2020-avr. 2021" />
 				<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
 				<Item text="Bac économique et social" date="2012-2016" />
 			</Box>
