@@ -100,8 +100,8 @@
 		</div>
 	</div>
 	<div class="desc">
-		Actuellement en formation de 7 mois, je recherche un stage de développement web ou logiciel à
-		Nantes du 4 au 29 janvier.
+		Actuellement en formation intensive chez Simplon, je recherche un stage de développeur web ou
+		logiciel à Nantes du 4 au 29 janvier.
 	</div>
 	<div class="tabs">
 		<div
