@@ -63,7 +63,7 @@
 	.boxContent.dated::after {
 		content: "";
 		position: absolute;
-		background-image: url("../assets/up.svg");
+		background-image: url("../../assets/up.svg");
 		height: 20px;
 		width: 17px;
 		top: -12px;
