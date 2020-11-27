@@ -82,7 +82,7 @@
 			<Box title="Dev skills">
 				<ItemList title="Web">
 					<LI text="HTML5, CSS/SASS responsive" otherData="Maîtrise" />
-					<LI text="Javascript, Svelte.js" otherData="Très bon" />
+					<LI text="Javascript, Svelte.js, TS" otherData="Très bon" />
 					<LI text="Google Firebase" otherData="Très bon" />
 					<LI text="Vue.js" otherData="Débutant" />
 				</ItemList>
