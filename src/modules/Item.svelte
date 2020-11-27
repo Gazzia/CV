@@ -2,6 +2,7 @@
 	export let text = "";
 	export let date = false;
 	export let solo = false;
+	export let under = false;
 </script>
 
 <style>
@@ -21,13 +22,19 @@
 		color: #6254bd;
 	}
 
-	.date {
+	.date,
+	.under {
 		opacity: 0.7;
 	}
 </style>
 
 <span>
-	<div class="text" class:solo>{text}</div>
+	<div class="text" class:solo>
+		{text}
+		{#if under}
+			<div class="under">{under}</div>
+		{/if}
+	</div>
 	{#if date}
 		<div class="date">{date}</div>
 	{/if}

@@ -17,6 +17,8 @@
 		padding: 20px;
 		box-sizing: border-box;
 		flex-direction: column;
+		z-index: 4;
+		flex: 1 0 auto;
 	}
 	.info {
 		display: flex;
@@ -24,6 +26,7 @@
 	}
 	.desc {
 		width: 450px;
+		max-width: 100%;
 		margin-bottom: 17px;
 		text-align: center;
 		opacity: 0.6;
@@ -34,16 +37,23 @@
 	}
 	.tabs {
 		display: flex;
-		gap: 40px;
+		gap: 17px;
 	}
 	.tab {
 		color: #6254bd;
+		background-color: white;
 		text-transform: uppercase;
 		font-size: 14px;
 		cursor: pointer;
+		padding: 6px 19px;
+		border-radius: 6px;
+		border: 1px solid #6254bd;
+		box-shadow: 0px 3px 5px 0px #0000000d, 0px 3px 2px -2px #00000052;
+		transition: 0.2s;
 	}
 	.tab.active {
-		border-bottom: 1px solid #6254bd;
+		background-color: #6a54f6;
+		color: white;
 	}
 	#avatar {
 		flex: 0 0 auto;

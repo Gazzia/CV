@@ -18,6 +18,7 @@
 		display: flex;
 		position: relative;
 		z-index: 3;
+		flex: 1 0 auto;
 	}
 	.tab {
 		gap: 25px;
@@ -33,52 +34,74 @@
 
 	.elem .label {
 		color: #6254bd;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 14px;
 		text-transform: uppercase;
 	}
-	.phone {
-		columns: 5;
-		-webkit-columns: 5;
-		-moz-columns: 5;
-		column-gap: 0.1em;
-		-webkit-column-gap: 0.1em;
-		-moz-column-gap: 0.1em;
+
+	.sub {
+		opacity: 0.7;
+		margin-left: 25px;
+	}
+	.blob1 {
+		position: absolute;
+		height: 120vh;
+		top: -40vh;
+		left: -40vw;
+	}
+	.blob2 {
+		position: absolute;
+		height: 120vh;
+		top: 55vh;
+		right: -40vw;
+	}
+	@media screen and (max-width: 830px) {
+		.blob2 {
+			position: absolute;
+			height: 120vh;
+			top: 100vh;
+			right: -40vw;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		.blob2 {
+			position: absolute;
+			height: 120vh;
+			top: 140vh;
+			right: -40vw;
+		}
 	}
 </style>
 
 <main in:fade>
+	<img src="assets/blob1.svg" alt="" class="blob1" />
+	<img src="assets/blob2.svg" alt="" class="blob2" />
 	{#if $openTab == 'infos'}
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
-			<Box title="études" dated full>
-				<Item text="Simplon - Titre pro. Web/Web mobile Bac+2" date="sept. 2020-avr. 2021" />
-				<Item text="L1 - Langues Étrangères Appliquées" date="2016" />
-				<Item text="Bac économique et social" date="2012-2016" />
-			</Box>
 			<Box title="Dev skills">
 				<ItemList title="Web">
 					<LI text="HTML5, CSS/SASS responsive" otherData="Maîtrise" />
 					<LI text="Javascript, Svelte.js" otherData="Très bon" />
 					<LI text="Google Firebase" otherData="Très bon" />
-					<LI text="Vue.js" otherData="Notions" />
+					<LI text="Vue.js" otherData="Débutant" />
 				</ItemList>
 				<ItemList title="Node">
 					<LI text="Module Bundlers (Rollup, Snowpack..)" otherData="Bon" />
 					<LI text="Electron" otherData="Bon" />
 				</ItemList>
 				<ItemList title="Java">
-					<LI text="Maven" otherData="Notions" />
-					<LI text="JDK 1.8" otherData="Notions" />
+					<LI text="Maven, Spring, Hibernate" otherData="Débutant" />
+					<LI text="JDK 1.8" otherData="Débutant" />
 				</ItemList>
 				<Item solo text="MySQL" otherData="Bon" />
 			</Box>
 			<Box title="Skills">
-				<ItemList title="Soft">
+				<ItemList title="Soft skills">
 					<LI text="Pédagogie et écoute" />
-					<LI text="Curiosité" />
-					<LI text="Investissement" />
+					<LI text="Curiosité, investissement" />
 					<LI text="Autonomie" />
 				</ItemList>
+				<Item solo text="Méthodes agiles" />
 				<ItemList title="Langues">
 					<LI text="Anglais" otherData="Bon" />
 					<LI text="Espagnol" otherData="Notions" />
@@ -86,21 +109,30 @@
 					<LI text="Esperanto" otherData="Notions" />
 				</ItemList>
 			</Box>
-			<Box title="Parcours" dated spaced>
-				<Item text="Formation chez Simplon" date="Sept 2020" />
-				<Item text="Nombreux emplois, majoritairement dans la manutention" />
-				<Item text="Maîtrise de la plupart du langage Javascript" />
-				<Item text="Développement de webapps, découverte de Node" />
-				<Item text="Premières expériences en entreprise, dans la restauration" date="2017" />
-				<Item text="Développement de petites pages statiques en HTML/CSS" date="2016-17" />
+			<Box title="Parcours pro" dated spaced>
+				<Item text="Manutention" date="2020" />
+				<div class="sub">Entreprises de cartonnage</div>
+				<div class="sub">Agriculture</div>
+				<div class="sub">Livraison meubles</div>
+				<Item text="Aide-dentaire" />
+				<Item text="Commis de cuisine/crêpier" date="2017" />
 			</Box>
-			<Box title="Mes loisirs">
+			<Box title="formation">
+				<Item
+					text="Titre professionel développeur Web/Web mobile"
+					under="Simplon - Sept 2020 - avr 2021 [Bac+2]" />
+				<Item
+					text="L1 - Langues étrangères appliquées"
+					under="Université de Nantes - 2016/2017" />
+				<Item text="Bac. Economique et Social" under="Lycée Francois Rabelais (85200) - 2016" />
+			</Box>
+			<Box title="loisirs">
 				<Item solo text="Lecture" />
-				<Item solo text="Cinéma de niche" />
-				<ItemList title="Web">
-					<LI text="Développement de webapps pour des projets personnels" />
-				</ItemList>
+				<Item solo text="Cinéma de genre, absurde" />
+				<Item solo text="Web" />
+				<div class="sub">Développement de webapps - projets perso</div>
 				<Item solo text="Voyages" />
+				<div class="sub">(Islande, Slovaquie, Ecosse..)</div>
 				<Item solo text="Randonnée" />
 				<Item solo text="Aventure !" />
 			</Box>
@@ -109,7 +141,7 @@
 		<div class="tab" in:fly|local={{x: 500, delay: 300}} out:fly|local={{x: 500}}>
 			<Box centered>
 				<div class="elem">
-					<div class="label phone">Téléphone</div>
+					<div class="label">Téléphone</div>
 					<div class="value">0634394117</div>
 				</div>
 				<div class="elem">

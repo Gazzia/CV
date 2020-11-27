@@ -10,17 +10,19 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100vh;
+		height: auto;
 		padding: 0;
 		margin: 0;
 		font-family: "Poppins", sans-serif;
-		overflow: hidden;
 	}
 	.container {
 		background-color: rgb(247, 244, 244);
 		color: rgb(61, 56, 53);
-		height: 100vh;
-		overflow-y: scroll;
+		height: auto;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		display: flex;
+		flex-direction: column;
 	}
 	:global(h1, h2, h3) {
 		margin: 0;

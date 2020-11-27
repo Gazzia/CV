@@ -14,12 +14,13 @@
 		border-radius: 6px;
 		padding: 15px 20px;
 		padding-bottom: 32px;
-		box-shadow: 0 0.5px 1.3px rgba(0, 0, 0, 0.008), 0 1.1px 3.1px rgba(0, 0, 0, 0.012),
-			0 2.1px 5.9px rgba(0, 0, 0, 0.015), 0 3.8px 10.5px rgba(0, 0, 0, 0.018),
-			0 7.1px 19.6px rgba(0, 0, 0, 0.022), 0 17px 47px rgba(0, 0, 0, 0.03);
+		box-shadow: 0 0.5px 1.3px rgba(0, 0, 0, 0.01), 0 1.1px 3.1px rgba(0, 0, 0, 0.016),
+			0 2.1px 5.9px rgba(0, 0, 0, 0.018), 0 3.8px 10.5px rgba(0, 0, 0, 0.023),
+			0 7.1px 19.6px rgba(0, 0, 0, 0.035), 0 17px 47px rgba(0, 0, 0, 0.04);
 		display: flex;
 		flex-direction: column;
 		flex: 1 1 auto;
+		position: relative;
 	}
 
 	section.centered {
@@ -31,9 +32,9 @@
 	}
 	.title {
 		text-transform: uppercase;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.4px;
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 700;
 		width: 100%;
 		text-align: center;
 		margin-bottom: 15px;
@@ -42,6 +43,7 @@
 	.boxContent {
 		gap: 6px;
 
+		position: relative;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -54,8 +56,20 @@
 	}
 
 	.boxContent.dated {
-		border-right: 1px dashed rgba(61, 56, 53, 0.65);
-		padding-right: 10px;
+		border-right: 2px dashed rgba(61, 56, 53, 0.41);
+		padding-right: 12px;
+		width: calc(100% - 15px);
+	}
+	.boxContent.dated::after {
+		content: "";
+		position: absolute;
+		background-image: url("../assets/up.svg");
+		height: 20px;
+		width: 17px;
+		top: -12px;
+		right: -9.5px;
+		opacity: 0.5;
+		background-size: 100%;
 	}
 	.boxContent.centered {
 		justify-content: center;
