@@ -19,7 +19,8 @@
 		position: relative;
 		z-index: 3;
 		flex: 1 0 auto;
-		width: 100%;
+		width: 100vw;
+		box-sizing: border-box;
 	}
 	.tab {
 		gap: 25px;
