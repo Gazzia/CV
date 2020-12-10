@@ -81,13 +81,15 @@
 		margin-left: 30px;
 		/* text-align: center; */
 	}
-	h1 {
+
+	#title h1 {
 		color: #6254bd;
 	}
 
 	#title h2 {
 		font-weight: 400;
 		font-size: 18px;
+		line-height: 1.2em;
 	}
 </style>
 
