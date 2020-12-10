@@ -50,27 +50,51 @@
 		height: 120vh;
 		top: -40vh;
 		left: -40vw;
+		animation: 9s ease-in-out 1s infinite alternate both blob1;
 	}
 	.blob2 {
 		position: absolute;
 		height: 120vh;
 		top: 55vh;
 		right: -40vw;
+		animation: 7s ease-in-out 1s infinite alternate both blob2;
 	}
 	@media screen and (max-width: 830px) {
 		.blob2 {
-			position: absolute;
-			height: 120vh;
 			top: 100vh;
 			right: -40vw;
 		}
 	}
 	@media screen and (max-width: 500px) {
 		.blob2 {
-			position: absolute;
-			height: 120vh;
 			top: 140vh;
 			right: -40vw;
+		}
+	}
+	@keyframes blob1 {
+		0% {
+			left: -40vw;
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(10deg);
+		}
+		100% {
+			left: -50vw;
+			transform: rotate(-10deg);
+		}
+	}
+	@keyframes blob2 {
+		0% {
+			right: -40vw;
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(6deg);
+		}
+		100% {
+			right: -35vw;
+			transform: rotate(-4deg);
 		}
 	}
 </style>

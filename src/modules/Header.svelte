@@ -24,6 +24,11 @@
 		display: flex;
 		margin-bottom: 30px;
 	}
+	@media (max-width: 400px) {
+		.info {
+			margin-bottom: 20px;
+		}
+	}
 	.desc {
 		width: 450px;
 		max-width: 100%;
