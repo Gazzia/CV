@@ -1,6 +1,7 @@
 <script>
 	export let text = "";
 	export let rating = false;
+	const ratingStrings = ["Notions", "Débutant", "Familier", "Bon", "Très bon", "Maîtrise"];
 </script>
 
 <style>
@@ -28,11 +29,11 @@
 	}
 </style>
 
-{#if !rating}
+{#if rating === false}
 	<dd>{text}</dd>
 {:else}
 	<dd class="double">
 		<div class="text">{text}</div>
-		<div class="rating">{rating}</div>
+		<div class="rating">{ratingStrings[+rating]}</div>
 	</dd>
 {/if}

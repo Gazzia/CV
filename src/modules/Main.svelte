@@ -82,21 +82,21 @@
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
 			<Box title="Dev skills">
 				<ItemList title="Web">
-					<LI text="HTML5, CSS/SASS responsive" rating="Maîtrise" />
-					<LI text="Javascript, Svelte.js, TS" rating="Maîtrise" />
-					<LI text="Google Firebase" rating="Très bon" />
-					<LI text="Vue.js" rating="Bon" />
-					<LI text="React, Angular" rating="Débutant" />
+					<LI text="HTML5, CSS/SASS responsive" rating="5" />
+					<LI text="Javascript, Svelte.js, TS" rating="5" />
+					<LI text="Google Firebase" rating="4" />
+					<LI text="Vue.js" rating="2" />
+					<LI text="React, Angular" rating="1" />
 				</ItemList>
 				<ItemList title="Node">
-					<LI text="Module Bundlers (Rollup, Snowpack..)" rating="Bon" />
-					<LI text="Electron" rating="Bon" />
+					<LI text="Module Bundlers (Rollup, Snowpack..)" rating="3" />
+					<LI text="Electron" rating="3" />
 				</ItemList>
 				<ItemList title="Java">
-					<LI text="Maven, Spring, Hibernate" rating="Débutant" />
-					<LI text="JDK 1.8" rating="Débutant" />
+					<LI text="Maven, Spring, Hibernate" rating="1" />
+					<LI text="JDK 1.8" rating="1" />
 				</ItemList>
-				<Item solo text="MySQL" rating="Bon" />
+				<Item solo text="MySQL" rating="3" />
 			</Box>
 			<Box title="Skills">
 				<ItemList title="Soft skills">
@@ -107,10 +107,10 @@
 				<Item solo text="Méthodes agiles" />
 				<Item solo text="Intégration continue" />
 				<ItemList title="Langues">
-					<LI text="Anglais" rating="Bon" />
-					<LI text="Espagnol" rating="Notions" />
-					<LI text="Russe" rating="Notions" />
-					<LI text="Esperanto" rating="Notions" />
+					<LI text="Anglais" rating="3" />
+					<LI text="Espagnol" rating="0" />
+					<LI text="Russe" rating="0" />
+					<LI text="Esperanto" rating="0" />
 				</ItemList>
 			</Box>
 			<Box title="Parcours pro" dated spaced>
