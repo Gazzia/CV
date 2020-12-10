@@ -12,7 +12,6 @@
 	dd.double {
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
 	}
 
 	.rating {
@@ -26,6 +25,8 @@
 			0 0.9px 0.9px rgba(0, 0, 0, 0.015), 0 1.6px 1.6px rgba(0, 0, 0, 0.018),
 			0 2.9px 2.9px rgba(0, 0, 0, 0.022), 0 7px 7px rgba(0, 0, 0, 0.03);
 		border: 1px solid #6a54f6;
+		flex: 0 0 auto;
+		height: max-content;
 	}
 </style>
 
