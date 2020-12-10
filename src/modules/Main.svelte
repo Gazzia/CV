@@ -83,9 +83,10 @@
 			<Box title="Dev skills">
 				<ItemList title="Web">
 					<LI text="HTML5, CSS/SASS responsive" otherData="Maîtrise" />
-					<LI text="Javascript, Svelte.js, TS" otherData="Très bon" />
+					<LI text="Javascript, Svelte.js, TS" otherData="Maîtrise" />
 					<LI text="Google Firebase" otherData="Très bon" />
-					<LI text="Vue.js" otherData="Débutant" />
+					<LI text="Vue.js" otherData="Bon" />
+					<LI text="React, Angular" otherData="Débutant" />
 				</ItemList>
 				<ItemList title="Node">
 					<LI text="Module Bundlers (Rollup, Snowpack..)" otherData="Bon" />
@@ -104,6 +105,7 @@
 					<LI text="Autonomie" />
 				</ItemList>
 				<Item solo text="Méthodes agiles" />
+				<Item solo text="Intégration continue" />
 				<ItemList title="Langues">
 					<LI text="Anglais" otherData="Bon" />
 					<LI text="Espagnol" otherData="Notions" />
