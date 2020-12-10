@@ -82,21 +82,21 @@
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
 			<Box title="Dev skills">
 				<ItemList title="Web">
-					<LI text="HTML5, CSS/SASS responsive" otherData="Maîtrise" />
-					<LI text="Javascript, Svelte.js, TS" otherData="Maîtrise" />
-					<LI text="Google Firebase" otherData="Très bon" />
-					<LI text="Vue.js" otherData="Bon" />
-					<LI text="React, Angular" otherData="Débutant" />
+					<LI text="HTML5, CSS/SASS responsive" rating="Maîtrise" />
+					<LI text="Javascript, Svelte.js, TS" rating="Maîtrise" />
+					<LI text="Google Firebase" rating="Très bon" />
+					<LI text="Vue.js" rating="Bon" />
+					<LI text="React, Angular" rating="Débutant" />
 				</ItemList>
 				<ItemList title="Node">
-					<LI text="Module Bundlers (Rollup, Snowpack..)" otherData="Bon" />
-					<LI text="Electron" otherData="Bon" />
+					<LI text="Module Bundlers (Rollup, Snowpack..)" rating="Bon" />
+					<LI text="Electron" rating="Bon" />
 				</ItemList>
 				<ItemList title="Java">
-					<LI text="Maven, Spring, Hibernate" otherData="Débutant" />
-					<LI text="JDK 1.8" otherData="Débutant" />
+					<LI text="Maven, Spring, Hibernate" rating="Débutant" />
+					<LI text="JDK 1.8" rating="Débutant" />
 				</ItemList>
-				<Item solo text="MySQL" otherData="Bon" />
+				<Item solo text="MySQL" rating="Bon" />
 			</Box>
 			<Box title="Skills">
 				<ItemList title="Soft skills">
@@ -107,10 +107,10 @@
 				<Item solo text="Méthodes agiles" />
 				<Item solo text="Intégration continue" />
 				<ItemList title="Langues">
-					<LI text="Anglais" otherData="Bon" />
-					<LI text="Espagnol" otherData="Notions" />
-					<LI text="Russe" otherData="Notions" />
-					<LI text="Esperanto" otherData="Notions" />
+					<LI text="Anglais" rating="Bon" />
+					<LI text="Espagnol" rating="Notions" />
+					<LI text="Russe" rating="Notions" />
+					<LI text="Esperanto" rating="Notions" />
 				</ItemList>
 			</Box>
 			<Box title="Parcours pro" dated spaced>
