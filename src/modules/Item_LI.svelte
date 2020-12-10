@@ -12,6 +12,7 @@
 	dd.double {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.rating {
