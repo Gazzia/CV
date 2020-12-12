@@ -7,7 +7,7 @@
 	import ItemList from "./Item_List.svelte";
 	import LI from "./Item_LI.svelte";
 	import Tab from "./Map.svelte";
-	export let ready;
+	export let ready = false;
 	import { scrollToTop } from "svelte-scrollto";
 </script>
 
@@ -148,7 +148,7 @@
 					<LI text="Maven, Spring, Hibernate" rating="1" />
 					<LI text="JDK 1.8" rating="1" />
 				</ItemList>
-				<Item solo text="MySQL" rating="3" />
+				<Item solo text="MySQL" />
 			</Box>
 			<Box title="Skills">
 				<ItemList title="Soft skills">
