@@ -66,7 +66,7 @@
 		justify-content: space-between;
 		align-items: center;
 		flex: 0 0 auto;
-		gap: 10px;
+		gap: 5px;
 	}
 	.blob1 {
 		position: absolute;
