@@ -2,6 +2,7 @@
 	import Header from "./modules/Header.svelte";
 	import Main from "./modules/Main.svelte";
 	export let ready;
+	let scrollY;
 </script>
 
 <style>
@@ -37,7 +38,6 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA05WH1_Bm0JaMP7QGSRtwZ8O0ibj0F6-k&callback=initMap">
 	</script>
 </svelte:head>
-
 <div class="container">
 	<Header />
 	<Main bind:ready />

@@ -17,7 +17,8 @@
 	},
 	"dependencies": {
 		"svelte": "^3.29.4",
-		"svelte-google-maps-embed": "^0.1.1"
+		"svelte-google-maps-embed": "^0.1.1",
+		"svelte-scrollto": "^0.2.0"
 	},
 	"devDependencies": {
 		"@snowpack/app-scripts-svelte": "^1.9.2",

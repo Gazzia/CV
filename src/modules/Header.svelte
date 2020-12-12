@@ -1,6 +1,6 @@
 <script>
-	import {fade} from "svelte/transition";
-	import {openTab} from "../stores.js";
+	import { fade } from "svelte/transition";
+	import { openTab } from "../stores.js";
 </script>
 
 <style>
@@ -11,10 +11,13 @@
 		background-color: white;
 		justify-content: center;
 		align-items: center;
-		box-shadow: 0 0.8px 3.2px rgba(0, 0, 0, 0.008), 0 1.9px 7.6px rgba(0, 0, 0, 0.012),
-			0 3.6px 14.3px rgba(0, 0, 0, 0.015), 0 6.5px 25.5px rgba(0, 0, 0, 0.018),
-			0 12.1px 47.6px rgba(0, 0, 0, 0.022), 0 29px 114px rgba(0, 0, 0, 0.03);
-		padding: 20px;
+		box-shadow: 0 0.8px 3.2px rgba(0, 0, 0, 0.008),
+			0 1.9px 7.6px rgba(0, 0, 0, 0.012),
+			0 3.6px 14.3px rgba(0, 0, 0, 0.015),
+			0 6.5px 25.5px rgba(0, 0, 0, 0.018),
+			0 12.1px 47.6px rgba(0, 0, 0, 0.022),
+			0 29px 114px rgba(0, 0, 0, 0.03);
+		padding: 20px 25px;
 		box-sizing: border-box;
 		flex-direction: column;
 		z-index: 4;
@@ -68,9 +71,11 @@
 		border-radius: 50%;
 		position: relative;
 		overflow: hidden;
-		box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.011), 0 2.7px 5.3px rgba(0, 0, 0, 0.016),
-			0 5px 10px rgba(0, 0, 0, 0.02), 0 8.9px 17.9px rgba(0, 0, 0, 0.024),
-			0 16.7px 33.4px rgba(0, 0, 0, 0.029), 0 40px 80px rgba(0, 0, 0, 0.04);
+		box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.011),
+			0 2.7px 5.3px rgba(0, 0, 0, 0.016), 0 5px 10px rgba(0, 0, 0, 0.02),
+			0 8.9px 17.9px rgba(0, 0, 0, 0.024),
+			0 16.7px 33.4px rgba(0, 0, 0, 0.029),
+			0 40px 80px rgba(0, 0, 0, 0.04);
 	}
 
 	#avatar img {
@@ -96,6 +101,16 @@
 		font-size: 18px;
 		line-height: 1.2em;
 	}
+	@media (max-width: 376px) {
+		#title h1 {
+			line-height: 1em;
+			margin-bottom: 7px;
+			font-size: 27px;
+		}
+		#title h2 {
+			font-size: 16px;
+		}
+	}
 </style>
 
 <header in:fade>
@@ -107,8 +122,8 @@
 		</div>
 	</div>
 	<div class="desc">
-		Actuellement en formation intensive chez Simplon, je recherche un stage de développeur web ou
-		logiciel à Nantes du 4 au 29 janvier.
+		Actuellement en formation intensive chez Simplon, je recherche un stage
+		de développeur web ou logiciel à Nantes du 4 au 29 janvier.
 	</div>
 	<div class="tabs">
 		<div

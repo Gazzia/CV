@@ -1,6 +1,6 @@
 <script>
-	import {openTab} from "../stores.js";
-	import {fly, fade} from "svelte/transition";
+	import { openTab } from "../stores.js";
+	import { fly, fade } from "svelte/transition";
 	import Map from "./Map.svelte";
 	import Box from "./Box.svelte";
 	import Item from "./Item.svelte";
@@ -8,6 +8,7 @@
 	import LI from "./Item_LI.svelte";
 	import Tab from "./Map.svelte";
 	export let ready;
+	import { scrollToTop } from "svelte-scrollto";
 </script>
 
 <style>
@@ -44,6 +45,28 @@
 	.sub {
 		opacity: 0.7;
 		margin-left: 25px;
+	}
+	.backToTop_wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.backToTop {
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.4px;
+		color: #6254bd;
+		cursor: pointer;
+		background-color: white;
+		border-radius: 6px;
+		padding: 5px 7px;
+		box-shadow: 0px 3px 5px 0px #0000000d, 0px 3px 2px -2px #00000052;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex: 0 0 auto;
+		gap: 10px;
 	}
 	.blob1 {
 		position: absolute;
@@ -103,7 +126,10 @@
 	<img src="assets/blob1.svg" alt="" class="blob1" />
 	<img src="assets/blob2.svg" alt="" class="blob2" />
 	{#if $openTab == 'infos'}
-		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
+		<div
+			class="tab"
+			in:fly|local={{ x: -500, delay: 300 }}
+			out:fly|local={{ x: -500 }}>
 			<Box title="Dev skills">
 				<ItemList title="Web">
 					<LI text="HTML5, CSS/SASS responsive" rating="5" />
@@ -113,7 +139,9 @@
 					<LI text="React, Angular" rating="1" />
 				</ItemList>
 				<ItemList title="Node">
-					<LI text="Module Bundlers (Rollup, Snowpack..)" rating="3" />
+					<LI
+						text="Module Bundlers (Rollup, Snowpack..)"
+						rating="3" />
 					<LI text="Electron" rating="3" />
 				</ItemList>
 				<ItemList title="Java">
@@ -152,7 +180,9 @@
 				<Item
 					text="L1 - Langues étrangères appliquées"
 					under="Université de Nantes - 2016/2017" />
-				<Item text="Bac. Economique et Social" under="Lycée Francois Rabelais (85200) - 2016" />
+				<Item
+					text="Bac. Economique et Social"
+					under="Lycée Francois Rabelais (85200) - 2016" />
 			</Box>
 			<Box title="loisirs">
 				<Item solo text="Lecture" />
@@ -164,9 +194,18 @@
 				<Item solo text="Randonnée" />
 				<Item solo text="Aventure !" />
 			</Box>
+			<div class="backToTop_wrapper">
+				<div class="backToTop" on:click={scrollToTop}>
+					<div class="label">Retour en haut</div>
+					<img src="assets/arrow-up.svg" alt="" />
+				</div>
+			</div>
 		</div>
 	{:else}
-		<div class="tab" in:fly|local={{x: 500, delay: 300}} out:fly|local={{x: 500}}>
+		<div
+			class="tab"
+			in:fly|local={{ x: 500, delay: 300 }}
+			out:fly|local={{ x: 500 }}>
 			<Box centered>
 				<div class="elem">
 					<div class="label">Téléphone</div>
