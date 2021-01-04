@@ -133,10 +133,12 @@
 			<Box title="Dev skills">
 				<ItemList title="Web">
 					<LI text="HTML5, CSS/SASS responsive" rating="5" />
-					<LI text="Javascript, Svelte.js, TS" rating="5" />
+					<LI text="Javascript, Typescript" rating="5" />
+					<LI text="Svelte.js" rating="5" />
 					<LI text="Google Firebase" rating="4" />
-					<LI text="Vue.js" rating="2" />
-					<LI text="React, Angular" rating="1" />
+					<LI text="Vue.js" rating="3" />
+					<LI text="Angular" rating="2" />
+					<LI text="React" rating="1" />
 				</ItemList>
 				<ItemList title="Node">
 					<LI
