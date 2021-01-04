@@ -174,6 +174,9 @@
 				<div class="sub">Livraison meubles</div>
 				<Item text="Aide-dentaire" />
 				<Item text="Commis de cuisine/crêpier" date="2017" />
+				<Item
+					text="Stage développeur full-stack @Sumwhere"
+					date="2021" />
 			</Box>
 			<Box title="formation">
 				<Item
