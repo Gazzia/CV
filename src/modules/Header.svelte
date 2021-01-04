@@ -122,8 +122,8 @@
 		</div>
 	</div>
 	<div class="desc">
-		Actuellement en formation intensive chez Simplon, je recherche un stage
-		de développeur web ou logiciel à Nantes du 4 au 29 janvier.
+		Développeur Fullstack avec une préférence front-end sur Nantes,
+		actuellement en stage.
 	</div>
 	<div class="tabs">
 		<div
