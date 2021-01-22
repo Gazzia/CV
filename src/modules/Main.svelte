@@ -18,21 +18,21 @@
 		<div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
 			<Box title="Dev skills">
 				<ItemList title="Web">
-					<LI text="HTML5, CSS/SASS responsive" rating="5" />
-					<LI text="Javascript, Typescript" rating="5" />
-					<LI text="Svelte.js" rating="5" />
-					<LI text="Google Firebase" rating="4" />
-					<LI text="Vue.js" rating="3" />
-					<LI text="Angular" rating="2" />
-					<LI text="React" rating="1" />
+					<LI icon="compouté.png" text="HTML5, CSS/SASS responsive" rating="5" />
+					<LI icon="compouté.png" text="Javascript, Typescript" rating="5" />
+					<LI icon="brick.png" text="Svelte.js" rating="5" />
+					<LI icon="data.png" text="Google Firebase, GCP" rating="4" />
+					<LI icon="brick.png" text="Vue.js" rating="4" />
+					<LI icon="brick.png" text="Angular" rating="3" />
+					<LI icon="brick.png" text="React" rating="1" />
 				</ItemList>
 				<ItemList title="Node">
 					<LI text="Module Bundlers (Rollup, Snowpack..)" rating="3" />
 					<LI text="Electron" rating="3" />
 				</ItemList>
 				<ItemList title="Java">
-					<LI text="Maven, Spring, Hibernate" rating="1" />
-					<LI text="JDK 1.8" rating="1" />
+					<LI text="Maven, Spring, Hibernate" rating="2" />
+					<LI text="JDK 1.8 +" rating="2" />
 				</ItemList>
 				<Item solo text="MySQL" />
 			</Box>
@@ -40,7 +40,7 @@
 				<ItemList title="Soft skills">
 					<LI text="Pédagogie et écoute" />
 					<LI text="Curiosité, investissement" />
-					<LI text="Autonomie" />
+					<LI text="Autonomie, implication" />
 				</ItemList>
 				<Item solo text="Méthodes agiles" />
 				<Item solo text="Intégration continue" />
@@ -52,13 +52,14 @@
 				</ItemList>
 			</Box>
 			<Box title="Parcours pro" dated spaced>
+				<Item text="Partenaire et développeur full-stack @Sumwhere" date="Jan. 2021" />
+				<Item text="Stage dev. web @Sumwhere" />
 				<Item text="Manutention" date="2020" />
 				<div class="sub">Entreprises de cartonnage</div>
 				<div class="sub">Agriculture</div>
 				<div class="sub">Livraison meubles</div>
 				<Item text="Aide-dentaire" />
 				<Item text="Commis de cuisine/crêpier" date="2017" />
-				<Item text="Stage développeur full-stack @Sumwhere" date="2021" />
 			</Box>
 			<Box title="formation">
 				<Item

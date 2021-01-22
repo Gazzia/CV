@@ -1,8 +1,27 @@
 <script>
 	export let text = "";
 	export let rating = false;
+	export let icon = false;
 	const ratingStrings = ["Notions", "Débutant", "Familier", "Bon", "Très bon", "Maîtrise"];
 </script>
+
+{#if rating === false}
+	<dd>
+		{#if icon}
+			<img src="../assets/{icon}" alt="" />
+		{/if}
+		{text}
+	</dd>
+{:else}
+	<dd class="double">
+		<div class="text">
+			{#if icon}
+				<img src="../assets/{icon}" alt="" />
+			{/if}{text}
+		</div>
+		<div class="rating">{ratingStrings[+rating]}</div>
+	</dd>
+{/if}
 
 <style>
 	dd {
@@ -29,13 +48,16 @@
 		flex: 0 0 auto;
 		height: max-content;
 	}
-</style>
 
-{#if rating === false}
-	<dd>{text}</dd>
-{:else}
-	<dd class="double">
-		<div class="text">{text}</div>
-		<div class="rating">{ratingStrings[+rating]}</div>
-	</dd>
-{/if}
+	.text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		max-height: 18px;
+		max-width: 18px;
+		margin-bottom: 1px;
+		margin-right: 8px;
+	}
+</style>
