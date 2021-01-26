@@ -81,10 +81,9 @@
 				<Item solo text="Cinéma de genre, absurde" />
 				<Item solo text="Web" />
 				<div class="sub">Développement de webapps - projets perso</div>
-				<Item solo text="Voyages" />
-				<div class="sub">(Islande, Slovaquie, Ecosse..)</div>
+				<div class="sub">Intêret pour l'open-source</div>
 				<Item solo text="Randonnée" />
-				<Item solo text="Aventure !" />
+				<Item solo text="Partir à l'aventure sans destination déterminée 🧭" />
 			</Box>
 			<div class="backToTop_wrapper">
 				<div class="backToTop" on:click={scrollToTop}>
