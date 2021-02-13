@@ -8,19 +8,13 @@ module.exports = {
 		"@snowpack/plugin-dotenv",
 		["@snowpack/plugin-webpack", {}],
 	],
-	install: [
-		/* ... */
-	],
-	installOptions: {
+	packageOptions: {
 		/* ... */
 	},
 	devOptions: {
 		/* ... */
 	},
 	buildOptions: {
-		/* ... */
-	},
-	proxy: {
 		/* ... */
 	},
 	alias: {

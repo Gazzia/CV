@@ -8,6 +8,15 @@
 	export let spaced = false;
 </script>
 
+<section class:full class:centered>
+	{#if title}
+		<h3 class="title highlight">{title}</h3>
+	{/if}
+	<div class="boxContent" class:dated class:centered class:spaced>
+		<slot />
+	</div>
+</section>
+
 <style>
 	section {
 		background-color: white;
@@ -52,7 +61,7 @@
 	}
 
 	.boxContent.spaced {
-		gap: 12px;
+		gap: 6px;
 	}
 
 	.boxContent.dated {
@@ -80,12 +89,3 @@
 		color: rgba(61, 56, 53, 0.89);
 	}
 </style>
-
-<section class:full class:centered>
-	{#if title}
-		<h3 class="title highlight">{title}</h3>
-	{/if}
-	<div class="boxContent" class:dated class:centered class:spaced>
-		<slot />
-	</div>
-</section>

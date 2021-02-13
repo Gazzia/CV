@@ -5,6 +5,18 @@
 	export let under = false;
 </script>
 
+<span>
+	<div class="text" class:solo>
+		{text}
+		{#if under}
+			<div class="under">{under}</div>
+		{/if}
+	</div>
+	{#if date}
+		<div class="date">{date}</div>
+	{/if}
+</span>
+
 <style>
 	span {
 		margin-left: 10px;
@@ -25,17 +37,8 @@
 	.date,
 	.under {
 		opacity: 0.7;
+		font-size: 14px;
+		margin-top: 0px;
+		margin-bottom: 5px;
 	}
 </style>
-
-<span>
-	<div class="text" class:solo>
-		{text}
-		{#if under}
-			<div class="under">{under}</div>
-		{/if}
-	</div>
-	{#if date}
-		<div class="date">{date}</div>
-	{/if}
-</span>

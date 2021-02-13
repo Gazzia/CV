@@ -2,7 +2,7 @@
 	export let text = "";
 	export let rating = false;
 	export let icon = false;
-	const ratingStrings = ["Notions", "Débutant", "Familier", "Bon", "Très bon", "Maîtrise"];
+	const ratingStrings = ["Notions", "Débutant", "Familier", "Bon", "Habitué", "Maîtrise"];
 </script>
 
 {#if rating === false}

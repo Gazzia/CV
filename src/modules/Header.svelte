@@ -1,6 +1,7 @@
 <script>
 	import {fade} from "svelte/transition";
 	import {openTab} from "../stores.js";
+	import {headline} from "../data.js";
 </script>
 
 <header in:fade>
@@ -8,13 +9,10 @@
 		<div id="avatar"><img src="assets/avatar.webp" alt="" /></div>
 		<div id="title">
 			<h1>Joseph Allain</h1>
-			<h2>Développeur Web Full Stack JS</h2>
+			<h2>{headline.title}</h2>
 		</div>
 	</div>
-	<div class="desc">
-		Développeur Fullstack avec une préférence front-end sur Nantes, actuellement en stage.
-		Disponible avril/mai 2021.
-	</div>
+	<div class="desc">{headline.desc}</div>
 	<div class="tabs">
 		<div
 			class="tab"
@@ -22,14 +20,18 @@
 			on:click={() => {
 				$openTab = "infos";
 			}}
-		>Infos</div>
+		>
+			Infos
+		</div>
 		<div
 			class="tab"
 			class:active={$openTab == "contact"}
 			on:click={() => {
 				$openTab = "contact";
 			}}
-		>Contact</div>
+		>
+			Contact
+		</div>
 	</div>
 </header>
 
