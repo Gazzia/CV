@@ -6,16 +6,8 @@
 	import Item from "./Item.svelte";
 	import ItemList from "./Item_List.svelte";
 	import LI from "./Item_LI.svelte";
-	export let ready = false;
 	import {scrollToTop} from "svelte-scrollto";
-	import {
-		contact,
-		formations,
-		devSkillGroups,
-		skillGroups,
-		experiences,
-		loisirs,
-	} from "../data.js";
+	import {contact, formations, devSkillGroups, skillGroups, experiences, loisirs} from "../data.js";
 </script>
 
 <main in:fade>
@@ -94,9 +86,7 @@
 					<div class="label">Adresse</div>
 					<div class="value">{contact.address}</div>
 				</div>
-				{#if ready}
-					<Map />
-				{/if}
+				<Map />
 			</Box>
 		</div>
 	{/if}

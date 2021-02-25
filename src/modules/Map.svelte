@@ -1,37 +1,48 @@
 <script>
-	//  import mapStyles from './map-styles'; // optional
-
-	let container;
-	let map;
-	let marker;
-	let zoom = 12;
-	let center = {lat: 47.188541702515856, lng: -1.5314786175686979};
 	import {onMount} from "svelte";
+	import {Map, Marker, controls} from "@beyonk/svelte-mapbox";
+	const {NavigationControl, ScaleControl} = controls;
+	let mapComponent;
+	const lat = 47.188541702515856;
+	const lng = -1.5314786175686979;
+	const zoom = 11.15;
+	const center = [lng, lat];
+	let shouldShow = false;
 
-	onMount(async () => {
-		map = new google.maps.Map(container, {
-			zoom,
-			center,
-			disableDefaultUI: true,
-			fullscreenControl: true,
-			zoomControl: true,
-			scaleControl: true,
-		});
-		marker = new google.maps.Marker({
-			position: center,
-			map: map,
-		});
+	onMount(() => {
+		setTimeout(() => {
+			shouldShow = true;
+		}, 300);
 	});
+
+	$: if (mapComponent) {
+		mapComponent.setCenter([lng, lat]);
+	}
+
+	function eventHandler(e) {
+		const data = e.detail;
+	}
 </script>
 
+{#if shouldShow}
+	<Map
+		accessToken="pk.eyJ1IjoiZ2F6emlhMjkiLCJhIjoiY2pvdm4wNG9zMWprYzNxbGtwbGg2c3hscSJ9.YlUXvjey2rHD1owGRA365Q"
+		bind:this={mapComponent}
+		on:recentre={(e) => console.log(e.detail.center)}
+		options={{scrollZoom: true}}
+		{center}
+		{zoom}
+	>
+		<Marker {lat} {lng} color="#6a54f6" label="some marker label" popupClassName="class-name" />
+		<NavigationControl />
+		<ScaleControl />
+	</Map>
+{/if}
+
 <style>
-	.wrapper {
+	:global(.mapboxgl-map) {
+		height: 300px !important;
 		width: 100%;
-		height: 350px;
-		overflow: hidden;
-		border-radius: 10px;
-		margin-top: 5px;
+		border-radius: 11px;
 	}
 </style>
-
-<div class="wrapper" bind:this={container} />

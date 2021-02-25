@@ -1,9 +1,12 @@
 <script>
 	import Header from "./modules/Header.svelte";
 	import Main from "./modules/Main.svelte";
-	export let ready;
-	let scrollY;
 </script>
+
+<div class="container">
+	<Header />
+	<Main />
+</div>
 
 <style>
 	:global(html, body) {
@@ -20,6 +23,7 @@
 		background-color: rgb(247, 244, 244);
 		color: rgb(61, 56, 53);
 		height: auto;
+		min-height: 100vh;
 		overflow-y: hidden;
 		overflow-x: hidden;
 		display: flex;
@@ -30,15 +34,3 @@
 		padding: 0;
 	}
 </style>
-
-<svelte:head>
-	<script
-		defer
-		async
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA05WH1_Bm0JaMP7QGSRtwZ8O0ibj0F6-k&callback=initMap">
-	</script>
-</svelte:head>
-<div class="container">
-	<Header />
-	<Main bind:ready />
-</div>

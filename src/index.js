@@ -5,10 +5,6 @@ var app = new App({
 	intro: true,
 });
 
-window.initMap = function ready() {
-	app.$set({ready: true});
-};
-
 export default app;
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
