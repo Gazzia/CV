@@ -12,12 +12,8 @@
 	onMount(() => {
 		setTimeout(() => {
 			shouldShow = true;
-		}, 300);
+		}, 600);
 	});
-
-	$: if (mapComponent) {
-		mapComponent.setCenter([lng, lat]);
-	}
 
 	function eventHandler(e) {
 		const data = e.detail;
@@ -33,7 +29,7 @@
 		{center}
 		{zoom}
 	>
-		<Marker {lat} {lng} color="#6a54f6" label="some marker label" popupClassName="class-name" />
+		<Marker {lat} {lng} color="#6a54f6" label="Joseph" />
 		<NavigationControl />
 		<ScaleControl />
 	</Map>
