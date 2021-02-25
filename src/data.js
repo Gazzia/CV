@@ -132,7 +132,7 @@ export const formations = [
 	},
 	{
 		title: "Certification aux méthodes agiles",
-		desc: "Simplon - Fév 2021 [Bac+2]",
+		desc: "CNCP - Fév 2021",
 	},
 	{
 		title: "Certification - Excellence en maîtrise qualité Web",
@@ -181,10 +181,7 @@ export const loisirs = [
 	},
 	{
 		title: "Web",
-		content: [
-			{title: "Développement de webapps - projets perso"},
-			{title: "Intêret pour l'open-source"},
-		],
+		content: [{title: "Développement de webapps - projets perso"}, {title: "Intêret pour l'open-source"}],
 	},
 	{
 		title: "Randonnée",
