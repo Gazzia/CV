@@ -152,7 +152,7 @@ export const experiences = [
 	{
 		title: "Développeur web",
 		desc: "@Groupe Creative",
-		date: "Avr. 2021",
+		date: "Juin 2021",
 	},
 	{
 		title: "Consultant front & design",
