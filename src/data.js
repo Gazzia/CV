@@ -1,12 +1,12 @@
 export const contact = {
 	phone: "0634394117",
 	email: "joseph.allain24@gmail.com",
-	address: "76 route de Vertou, 44200 Nantes",
+	address: "Bords de sèvre, Nantes",
 };
 export const headline = {
 	title: "Développeur Web Full Stack JS",
 	desc:
-		"Développeur Fullstack avec une préférence front sur Nantes, actuellement en formation. Disponible avril/mai 2021.",
+		"Développeur Fullstack à Nantes, chez Groupe Creative à partir de juin 2021",
 };
 
 export const devSkillGroups = [
@@ -128,7 +128,7 @@ export const skillGroups = [
 export const formations = [
 	{
 		title: "Titre pro. développeur Web/Web mobile JS/Java",
-		desc: "Simplon - Sept 2020 - avr 2021 [Bac+2]",
+		desc: "Simplon - Avr 2021 [Bac+2]",
 	},
 	{
 		title: "Certification aux méthodes agiles",
@@ -150,7 +150,12 @@ export const formations = [
 
 export const experiences = [
 	{
-		title: "Lead dev. front, partenaire",
+		title: "Développeur web",
+		desc: "@Groupe Creative",
+		date: "Avr. 2021",
+	},
+	{
+		title: "Consultant front & design",
 		desc: "@Sumwhere",
 		date: "Jan. 2021",
 	},
