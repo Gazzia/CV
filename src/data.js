@@ -77,6 +77,15 @@ export const devSkillGroups = [
 		],
 	},
 	{
+		title: "Groovy",
+		content: [
+			{
+				title: "Grails",
+				rating: "1",
+			},
+		],
+	},
+	{
 		title: "RDB(sql)",
 	},
 ];
