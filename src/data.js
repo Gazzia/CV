@@ -11,7 +11,7 @@ export const headline = {
 
 export const devSkillGroups = [
 	{
-		title: "Web",
+		title: "Front",
 		content: [
 			{
 				icon: "compouteur",
