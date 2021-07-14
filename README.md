@@ -1,7 +1,7 @@
 # CV
 CV développé avec Svelte.js.
 
-[Build en ligne](https://cv.jallain.vercel.app/)
+[Build en ligne](https://cv.jallain.fr/)
 
 ## Dev
 
