@@ -1013,19 +1013,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@beyonk/async-script-loader@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@beyonk/async-script-loader/-/async-script-loader-2.0.0.tgz#d8867e5cdf6ecd0e8cc06da06a8a5fb2a405f59f"
-  integrity sha512-OAhcycCXwSVsSMjJGAENz0qtrALW943IRbIGZRnJZBA2aO/BDdWuHY1gF/9l+dZITAEu/wAkwhMqtXNeqmW1rw==
-
-"@beyonk/svelte-mapbox@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@beyonk/svelte-mapbox/-/svelte-mapbox-7.0.0.tgz#7634c9e08ca7de6e94ae92c96abde3a027164c56"
-  integrity sha512-o8GbMDBkY/JEPbTdBgFGW/QVY0XUtd63eNPWAFAgGlbe56eWNNpZRwp97lxSQHfnTD6FlQFBORrwV4ZoyvmKog==
-  dependencies:
-    "@beyonk/async-script-loader" "^2.0.0"
-    fastq "^1.8.0"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -3210,13 +3197,6 @@ fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-
-fastq@^1.8.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.11.0.tgz#bb9fb955a07130a918eb63c1f5161cc32a5d0858"
-  integrity sha512-7Eczs8gIPDrVzT+EksYBcupqMyxSHXXrHOLRRxU2/DicV8789MRBRR8+Hc2uWzUupOs4YS4JzBmBxjjCVBxD/g==
-  dependencies:
-    reusify "^1.0.4"
 
 fb-watchman@^2.0.0:
   version "2.0.1"
@@ -5959,11 +5939,6 @@ retry@^0.12.0:
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.12.0.tgz#1b42a6266a21f07421d1b0b54b7dc167b01c013b"
   integrity sha1-G0KmJmoh8HQh0bC1S33BZ7AcATs=
 
-reusify@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
-  integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
-
 rgb-regex@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/rgb-regex/-/rgb-regex-1.0.1.tgz#c0e0d6882df0e23be254a475e8edd41915feaeb1"
@@ -6548,11 +6523,6 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
-
-svelte-google-maps-embed@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/svelte-google-maps-embed/-/svelte-google-maps-embed-0.1.1.tgz#8bb6a4e9bbb57ae9383f1558878bc611f95311f0"
-  integrity sha512-w0DxXhtrmrT2MfkTxjBq0b3bTC7iIX8aZTL9Hb58ETNUZBqrQPDhuw5bMzd7r2zDT+p7hAtpv83+QeKwlpzkCA==
 
 svelte-hmr@^0.11.2:
   version "0.11.5"
