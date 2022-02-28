@@ -11,7 +11,7 @@ export const headline = {
 
 export const devSkillGroups = [
 	{
-		title: "Front",
+		title: "Langages",
 		content: [
 			{
 				icon: "compouteur",
@@ -24,14 +24,34 @@ export const devSkillGroups = [
 				rating: "5",
 			},
 			{
+				icon: "compouteur",
+				title: "Groovy",
+				rating: "4",
+			},
+			{
+				icon: "compouteur",
+				title: "Java 1.8 +",
+				rating: "3",
+			},
+			{
+				icon: "compouteur",
+				title: "SQL",
+				rating: "3",
+			},
+		],
+	},
+	{
+		title: "Librairies & frameworks",
+		content: [
+			{
 				icon: "brick",
-				title: "Svelte.js",
+				title: "Angular",
 				rating: "5",
 			},
 			{
 				icon: "brick",
-				title: "Angular",
-				rating: "4",
+				title: "Svelte.js",
+				rating: "5",
 			},
 			{
 				icon: "brick",
@@ -39,9 +59,34 @@ export const devSkillGroups = [
 				rating: "4",
 			},
 			{
-				icon: "data",
-				title: "Google Firebase, GCP",
-				rating: "4",
+				icon: "brick",
+				title: "Grails",
+				rating: "3",
+			},
+			{
+				icon: "brick",
+				title: "Module Bundlers JS (Rollup, Snowpack..)",
+				rating: "3",
+			},
+			{
+				icon: "brick",
+				title: "Electron",
+				rating: "3",
+			},
+			{
+				icon: "brick",
+				title: "Spring",
+				rating: "2",
+			},
+			{
+				icon: "brick",
+				title: "Hibernate",
+				rating: "2",
+			},
+			{
+				icon: "brick",
+				title: "Maven",
+				rating: "2",
 			},
 			{
 				icon: "brick",
@@ -51,43 +96,15 @@ export const devSkillGroups = [
 		],
 	},
 	{
-		title: "Node",
+		title: "PaaS",
 		content: [
 			{
-				title: "Module Bundlers (Rollup, Snowpack..)",
-				rating: "3",
+				icon: "data",
+				title: "Google Firebase, GCP",
+				rating: "4",
 			},
-			{
-				title: "Electron",
-				rating: "3",
-			},
-		],
-	},
-	{
-		title: "Java",
-		content: [
-			{
-				title: "Maven, Spring, Hibernate",
-				rating: "2",
-			},
-			{
-				title: "JDK 1.8 +",
-				rating: "2",
-			},
-		],
-	},
-	{
-		title: "Groovy",
-		content: [
-			{
-				title: "Grails",
-				rating: "3",
-			},
-		],
-	},
-	{
-		title: "RDB(sql)",
-	},
+		]
+	}
 ];
 
 export const skillGroups = [
