@@ -81,7 +81,7 @@ export const devSkillGroups = [
 		content: [
 			{
 				title: "Grails",
-				rating: "1",
+				rating: "3",
 			},
 		],
 	},
@@ -203,4 +203,15 @@ export const loisirs = [
 	{
 		title: "Partir à l'aventure sans destination déterminée 🧭",
 	},
+];
+
+export const missions = [
+	{
+		title: "CBP",
+		desc: "Déploiement chez un client dans le secteur des assurances en tant qu'ingénieur en développement, pour un produit destiné à des filiales internationales.\n" +
+			"Contextes technique et fonctionnel nouveaux et complexes. \n" +
+			"Migrations, améliorations techniques et fonctionnelles, ajout de fonctionnalités, extraction de données.\n" +
+			"Technologies utilisées : Groovy, Grails, Angular",
+		dateDebut: "Juin 2021"
+	}
 ];

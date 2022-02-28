@@ -1,5 +1,4 @@
 <script>
-	import {slide} from "svelte/transition";
 	export let title = "";
 	export let dated = false;
 	export let full = false;
@@ -21,8 +20,7 @@
 	section {
 		background-color: white;
 		border-radius: 6px;
-		padding: 15px 20px;
-		padding-bottom: 32px;
+		padding: 15px 20px 32px;
 		box-shadow: 0 0.5px 1.3px rgba(0, 0, 0, 0.01), 0 1.1px 3.1px rgba(0, 0, 0, 0.016),
 			0 2.1px 5.9px rgba(0, 0, 0, 0.018), 0 3.8px 10.5px rgba(0, 0, 0, 0.023),
 			0 7.1px 19.6px rgba(0, 0, 0, 0.035), 0 17px 47px rgba(0, 0, 0, 0.04);

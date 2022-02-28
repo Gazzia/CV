@@ -16,7 +16,7 @@
 	<div class="tabs">
 		<div
 			class="tab"
-			class:active={$openTab == "infos"}
+			class:active={$openTab === "infos"}
 			on:click={() => {
 				$openTab = "infos";
 			}}
@@ -25,7 +25,7 @@
 		</div>
 		<div
 			class="tab"
-			class:active={$openTab == "contact"}
+			class:active={$openTab === "contact"}
 			on:click={() => {
 				$openTab = "contact";
 			}}
@@ -50,7 +50,6 @@
 		box-sizing: border-box;
 		flex-direction: column;
 		z-index: 4;
-		flex: 1 0 auto;
 	}
 	.info {
 		display: flex;
@@ -85,7 +84,7 @@
 		padding: 6px 19px;
 		border-radius: 6px;
 		border: 1px solid #6254bd;
-		box-shadow: 0px 3px 5px 0px #0000000d, 0px 3px 2px -2px #00000052;
+		box-shadow: 03px 5px 0 #0000000d, 0 3px 2px -2px #00000052;
 		transition: 0.2s;
 	}
 	.tab.active {
