@@ -6,7 +6,7 @@ export const contact = {
 export const headline = {
 	title: "Développeur Web Full Stack JS",
 	desc:
-		"Développeur Fullstack à Nantes, chez Groupe Creative à partir de juin 2021",
+		"Développeur Fullstack à Nantes, chez CBP à partir d'octobre 2022",
 };
 
 export const devSkillGroups = [
@@ -26,12 +26,12 @@ export const devSkillGroups = [
 			{
 				icon: "compouteur",
 				title: "Groovy",
-				rating: "4",
+				rating: "5",
 			},
 			{
 				icon: "compouteur",
-				title: "Java 1.8 +",
-				rating: "3",
+				title: "Java 8+",
+				rating: "4",
 			},
 			{
 				icon: "compouteur",
@@ -50,17 +50,17 @@ export const devSkillGroups = [
 			},
 			{
 				icon: "brick",
-				title: "Svelte.js",
-				rating: "5",
-			},
-			{
-				icon: "brick",
-				title: "Vue.js",
+				title: "Grails",
 				rating: "4",
 			},
 			{
 				icon: "brick",
-				title: "Grails",
+				title: "Svelte.js",
+				rating: "4",
+			},
+			{
+				icon: "brick",
+				title: "Vue.js",
 				rating: "3",
 			},
 			{
@@ -85,7 +85,7 @@ export const devSkillGroups = [
 			},
 			{
 				icon: "brick",
-				title: "Maven",
+				title: "Maven, Gradle",
 				rating: "2",
 			},
 			{
@@ -132,20 +132,22 @@ export const skillGroups = [
 		title: "Langues",
 		content: [
 			{
-				title: "Anglais",
-				rating: "3",
+				title: "Anglais - Écrit et oral technique",
 			},
 			{
-				title: "Espagnol",
-				rating: "0",
+				title: "Espagnol - Écrit et oral simple",
 			},
 			{
-				title: "Russe",
-				rating: "0",
+				title: "Italien - Écrit simple",
 			},
 			{
-				title: "Esperanto",
-				rating: "0",
+				title: "Danois - Notions",
+			},
+			{
+				title: "Russe - Notions",
+			},
+			{
+				title: "Esperanto - Notions",
 			},
 		],
 	},
@@ -176,6 +178,11 @@ export const formations = [
 
 export const experiences = [
 	{
+		title: "Ingénieur développement",
+		desc: "@CBP",
+		date: "Octobre 2022",
+	},
+	{
 		title: "Développeur web",
 		desc: "@Groupe Creative",
 		date: "Juin 2021",
@@ -205,17 +212,21 @@ export const experiences = [
 
 export const loisirs = [
 	{
-		title: "Lecture",
+		title: "Cinéma absurde",
 	},
 	{
-		title: "Cinéma de genre, absurde",
+		title: "Randonnée",
+	},
+	{
+		title: "Les groupes de post-punk/rock experimental post-brexit sud-londoniens de la scène underground du Windmill, Brixton",
+		content: [{title: "Mais je suis pas difficile"}],
+	},
+	{
+		title: "Lecture",
 	},
 	{
 		title: "Web",
 		content: [{title: "Développement de webapps - projets perso"}, {title: "Intêret pour l'open-source"}],
-	},
-	{
-		title: "Randonnée",
 	},
 	{
 		title: "Partir à l'aventure sans destination déterminée 🧭",
