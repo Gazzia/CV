@@ -1,12 +1,11 @@
 export const contact = {
 	phone: "0634394117",
 	email: "joseph.allain24@gmail.com",
-	address: "Bords de sèvre, Nantes",
+	address: "Région nantaise",
 };
 export const headline = {
-	title: "Développeur Web Full Stack JS",
-	desc:
-		"Développeur Fullstack à Nantes, chez CBP à partir d'octobre 2022",
+	title: "Développeur web fullstack",
+	desc: "Développeur dans la région Nantaise, en poste chez Kereis depuis 2021",
 };
 
 export const devSkillGroups = [
@@ -30,33 +29,43 @@ export const devSkillGroups = [
 			},
 			{
 				icon: "compouteur",
-				title: "Java 8+",
+				title: "Java 8 <> 21",
 				rating: "4",
 			},
 			{
 				icon: "compouteur",
-				title: "SQL",
-				rating: "3",
+				title: "SQL (postgres)",
+				rating: "4",
 			},
 		],
 	},
 	{
-		title: "Librairies & frameworks",
+		title: "Front-end",
 		content: [
 			{
 				icon: "brick",
-				title: "Angular",
+				title: "Angular (❤️) v7 <> 19",
 				rating: "5",
 			},
 			{
 				icon: "brick",
-				title: "Grails",
+				title: "Angular Material",
+				rating: "4",
+			},
+			{
+				icon: "brick",
+				title: "Tailwind",
+				rating: "4",
+			},
+			{
+				icon: "brick",
+				title: "Karma/Jasmine (test)",
 				rating: "4",
 			},
 			{
 				icon: "brick",
 				title: "Svelte.js",
-				rating: "4",
+				rating: "3",
 			},
 			{
 				icon: "brick",
@@ -75,7 +84,42 @@ export const devSkillGroups = [
 			},
 			{
 				icon: "brick",
+				title: "React",
+				rating: "1",
+			},
+		],
+	},
+	{
+		title: 'Back-end',
+		content: [
+			{
+				icon: "brick",
+				title: "Grails",
+				rating: "4",
+			},
+			{
+				icon: "brick",
+				title: "Micronaut",
+				rating: "4",
+			},
+			{
+				icon: "brick",
+				title: "Quarkus",
+				rating: "3",
+			},
+			{
+				icon: "brick",
+				title: "Spock (test)",
+				rating: "3",
+			},
+			{
+				icon: "brick",
 				title: "Spring",
+				rating: "2",
+			},
+			{
+				icon: "brick",
+				title: "Hibernate Envers",
 				rating: "2",
 			},
 			{
@@ -88,20 +132,46 @@ export const devSkillGroups = [
 				title: "Maven, Gradle",
 				rating: "2",
 			},
-			{
-				icon: "brick",
-				title: "React",
-				rating: "1",
-			},
-		],
+		]
 	},
 	{
-		title: "PaaS",
+		title: "Tooling et plateformes",
 		content: [
 			{
 				icon: "data",
-				title: "Google Firebase, GCP",
-				rating: "4",
+				title: "Windows, Linux, MacOS",
+			},
+			{
+				icon: "data",
+				title: "IntelliJ Idea",
+			},
+			{
+				icon: "data",
+				title: "Jira",
+			},
+			{
+				icon: "data",
+				title: "Gitlab CI",
+			},
+			{
+				icon: "data",
+				title: "Google Firebase",
+			},
+			{
+				icon: "data",
+				title: "Docker",
+			},
+			{
+				icon: "data",
+				title: "Plateforme AWS",
+			},
+			{
+				icon: "data",
+				title: "Jenkins",
+			},
+			{
+				icon: "data",
+				title: "Figma",
 			},
 		]
 	}
@@ -113,12 +183,17 @@ export const skillGroups = [
 		content: [
 			{
 				title: "Pédagogie et écoute",
+				desc: "(important en équipe ou pour travailler avec les métiers!)"
 			},
 			{
-				title: "Curiosité, investissement",
+				title: "Curiosité, investissement dans les projets",
 			},
 			{
 				title: "Autonomie, implication",
+			},
+			{
+				title: "Esprit critique et auto-critique",
+				desc: "(toujours vérifier si la demande est absurde ou si ce que l'on produit est absurde)",
 			},
 		],
 	},
@@ -126,13 +201,11 @@ export const skillGroups = [
 		title: "Méthodes agiles",
 	},
 	{
-		title: "Intégration continue",
-	},
-	{
 		title: "Langues",
 		content: [
 			{
 				title: "Anglais - Écrit et oral technique",
+				desc: "(J'ai pu travailler avec un public international)"
 			},
 			{
 				title: "Espagnol - Écrit et oral simple",
@@ -154,6 +227,14 @@ export const skillGroups = [
 ];
 
 export const formations = [
+	{
+		title: "Développement sécurisé",
+		desc: "Zenika - Jan 2025",
+	},
+	{
+		title: "Angular avancé",
+		desc: "Ib Segos - Avr 2024",
+	},
 	{
 		title: "Titre pro. développeur Web/Web mobile JS/Java",
 		desc: "Simplon - Avr 2021 [Bac+2]",
@@ -197,49 +278,46 @@ export const experiences = [
 		desc: "@Sumwhere",
 	},
 	{
-		title: "Manutention",
-		desc: "Industrie, Livraison, Agriculture",
-		date: "2020",
-	},
-	{
-		title: "Aide-dentaire",
-	},
-	{
-		title: "Commis de cuisine/crêpier",
-		date: "2017",
+		title: "Petits boulots à la pelle",
+		desc: "Industrie, Livraison, Agriculture, Cuisine, Santé",
 	},
 ];
 
 export const loisirs = [
 	{
-		title: "Cinéma absurde",
+		title: "Cinéma",
+		content: [{title: "Mais seulement Shrek et Camping 3"}],
 	},
 	{
-		title: "Randonnée",
+		title: "Rando & voyages",
+		content: [{title: "Un peu partout en Europe et au-delà"}],
 	},
 	{
-		title: "Les groupes de post-punk/rock experimental post-brexit sud-londoniens de la scène underground du Windmill, Brixton",
-		content: [{title: "Mais je suis pas difficile"}],
+		title: "Musique",
+		content: [{title: "Electro, Post-Punk, Techno, Classique, Jazz (pas difficile le gars)"}],
+	},
+	{
+		title: "Festivals",
+		content: [{title: "Bénévole au festival de Dour en belgique depuis quelques années"}],
 	},
 	{
 		title: "Lecture",
+		content: [{title: "Romans graphiques et SF principalement"}],
 	},
 	{
-		title: "Web",
-		content: [{title: "Développement de webapps - projets perso"}, {title: "Intêret pour l'open-source"}],
-	},
-	{
-		title: "Partir à l'aventure sans destination déterminée 🧭",
-	},
+		title: "Dev",
+		content: [{title: "J'ai une tonne de projets perso à mon actif,"},{title: "rarement terminés mais toujours avec passion"}],
+	}
 ];
 
 export const missions = [
 	{
-		title: "CBP",
+		title: "Kereis",
 		desc: "Déploiement chez un client dans le secteur des assurances en tant qu'ingénieur en développement, pour un produit destiné à des filiales internationales.\n" +
-			"Contextes technique et fonctionnel nouveaux et complexes. \n" +
+			"Contextes techniques et fonctionnels nouveaux et complexes. \n" +
 			"Migrations, améliorations techniques et fonctionnelles, ajout de fonctionnalités, extraction de données.\n" +
-			"Technologies utilisées : Groovy, Grails, Angular",
+			"Démos en anglais et proximité générale avec le métier.\n" +
+			"Technologies principales : Groovy, Grails, Micronaut, Angular",
 		dateDebut: "Juin 2021"
 	}
 ];

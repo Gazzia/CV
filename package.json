@@ -1,30 +1,20 @@
 {
-	"name": "gazzia29.github.io",
-	"version": "1.0.0",
-	"description": "",
-	"scripts": {
-		"start": "snowpack dev",
-		"build": "snowpack build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Gazzia29/gazzia29.github.io.git"
-	},
-	"author": "Joseph Allain",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Gazzia29/gazzia29.github.io/issues"
-	},
-	"dependencies": {
-		"svelte": "^3.52.0",
-		"svelte-scrollto": "^0.2.0"
-	},
-	"devDependencies": {
-		"@snowpack/app-scripts-svelte": "^2.0.1",
-		"@snowpack/plugin-dotenv": "^2.2.0",
-		"@snowpack/plugin-run-script": "^2.3.0",
-		"@snowpack/plugin-svelte": "^3.7.0",
-		"@snowpack/plugin-webpack": "^3.0.0",
-		"snowpack": "^3.8.8"
-	}
+  "name": "cv2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^5.20.2",
+    "svelte-check": "^4.1.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
 }

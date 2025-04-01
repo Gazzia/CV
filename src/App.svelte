@@ -20,7 +20,6 @@
 		font-family: "Poppins", sans-serif;
 	}
 	.container {
-		background-color: rgb(247, 244, 244);
 		color: rgb(61, 56, 53);
 		height: auto;
 		min-height: 100vh;

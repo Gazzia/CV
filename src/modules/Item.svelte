@@ -1,18 +1,18 @@
 <script>
 	export let text = "";
-	export let date = false;
+	export let date = '';
 	export let solo = false;
-	export let under = false;
+	export let under = "";
 </script>
 
 <span>
 	<div class="text" class:solo>
 		{text}
-		{#if under}
+		{#if under.length}
 			<div class="under">{under}</div>
 		{/if}
 	</div>
-	{#if date}
+	{#if date.length}
 		<div class="date">{date}</div>
 	{/if}
 </span>
@@ -31,7 +31,7 @@
 
 	.solo {
 		font-weight: 600;
-		color: #6254bd;
+		color: var(--main-color);
 	}
 
 	.date,

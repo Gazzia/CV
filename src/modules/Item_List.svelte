@@ -12,7 +12,7 @@
 	}
 	dl dt {
 		font-weight: 600;
-		color: #6254bd;
+		color: var(--main-color);
 	}
 </style>
 

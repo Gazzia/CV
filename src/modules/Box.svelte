@@ -45,7 +45,7 @@
 		width: 100%;
 		text-align: center;
 		margin-bottom: 15px;
-		color: #6254bd;
+		color: var(--main-color);
 	}
 	.boxContent {
 		gap: 6px;

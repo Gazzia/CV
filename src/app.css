@@ -1,0 +1,7 @@
+html {
+    --main-color: hsl(166.15deg 57% 47%);
+    --accent-color: hsl(11.08deg 100% 72.02%);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background-color: hsl(23.52deg 94.65% 97.7%);
+}
