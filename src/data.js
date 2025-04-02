@@ -298,7 +298,7 @@ export const loisirs = [
 	},
 	{
 		title: "Festivals",
-		content: [{title: "Bénévole au festival de Dour en belgique depuis quelques années"}],
+		content: [{title: "Bénévole au festival de Dour en Belgique depuis quelques années"}],
 	},
 	{
 		title: "Lecture",
