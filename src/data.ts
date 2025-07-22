@@ -263,8 +263,13 @@ export const formations: Formation[] = [
 
 export const experiences: Experience[] = [
   {
+    title: 'Lead dev',
+    employer: '@Kereis',
+    date: 'Juin 2025'
+  },
+  {
     title: 'Ingénieur développement',
-    employer: '@CBP',
+    employer: '@Kereis',
     date: 'Octobre 2022'
   },
   {
