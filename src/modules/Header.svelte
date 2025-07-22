@@ -1,7 +1,7 @@
 <script>
   import {fade} from "svelte/transition";
-  import {openTab} from "../stores.js";
-  import {headline} from "../data.js";
+  import {openTab} from "../stores.ts";
+  import {headline} from "../data.ts";
 </script>
 
 <header in:fade>
@@ -12,24 +12,18 @@
       <h2>{headline.title}</h2>
     </div>
   </div>
-  <div class="desc">{headline.desc}</div>
+  <div class="desc">{headline.subtitle}</div>
   <div class="tabs">
     <button
       class="tab"
       class:active={$openTab === "infos"}
-      on:click={() => {
-				$openTab = "infos";
-			}}
-    >
+      on:click={() => $openTab = "infos"}>
       Infos
     </button>
     <button
       class="tab"
       class:active={$openTab === "contact"}
-      on:click={() => {
-				$openTab = "contact";
-			}}
-    >
+      on:click={() => $openTab = "contact"}>
       Contact
     </button>
   </div>

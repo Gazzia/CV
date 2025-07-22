@@ -1,11 +1,11 @@
 <script>
-  import {openTab} from "../stores.js";
+  import {openTab} from "../stores.ts";
   import {fade, fly} from "svelte/transition";
-  import Box from "./Box.svelte";
-  import Item from "./Item.svelte";
-  import ItemList from "./Item_List.svelte";
-  import LI from "./Item_LI.svelte";
-  import {contact, devSkillGroups, experiences, formations, loisirs, missions, skillGroups} from "../data.js";
+  import Box from "../components/Box.svelte";
+  import Item from "../components/Item.svelte";
+  import ItemList from "../components/Item_List.svelte";
+  import LI from "../components/Item_LI.svelte";
+  import {contact, devSkillGroups, experiences, formations, loisirs, missions, skillGroups} from "../data.ts";
 
   function scrollTop() {
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -19,58 +19,58 @@
     <div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
       <Box title="Compétences techniques">
         {#each devSkillGroups as skillGroup}
-          {#if skillGroup.content}
-            <ItemList title={skillGroup.title}>
-              {#each skillGroup.content as skill}
-                <LI icon="{skill.icon}.png" text={skill.title} rating={skill.rating}/>
+          {#if skillGroup.items}
+            <ItemList title={skillGroup.groupTitle}>
+              {#each skillGroup.items as skill}
+                <LI icon="{skill.icon}.png" text={skill.name} rating={skill.rating}/>
               {/each}
             </ItemList>
           {:else}
-            <Item solo text={skillGroup.title}/>
+            <Item solo text={skillGroup.groupTitle}/>
           {/if}
         {/each}
       </Box>
       <Box title="Compétences moins techniques">
         {#each skillGroups as skillGroup}
-          {#if skillGroup.content}
-            <ItemList title={skillGroup.title}>
-              {#each skillGroup.content as skill}
-                <LI text={skill.title} rating={skill.rating} under={skill.desc}/>
+          {#if skillGroup.items}
+            <ItemList title={skillGroup.groupTitle}>
+              {#each skillGroup.items as skill}
+                <LI text={skill.name} rating={skill.rating} under={skill.description}/>
               {/each}
             </ItemList>
           {:else}
-            <Item solo text={skillGroup.title}/>
+            <Item solo text={skillGroup.groupTitle}/>
           {/if}
         {/each}
       </Box>
       <Box title="Parcours pro" dated spaced>
         {#each experiences as experience}
           <Item text={experience.title} date={experience.date}/>
-          {#if experience.desc}
-            <div class="sub">{experience.desc}</div>
+          {#if experience.employer}
+            <div class="sub">{experience.employer}</div>
           {/if}
         {/each}
       </Box>
       <Box title="formation">
         {#each formations as formation}
-          <Item text={formation.title} under={formation.desc}/>
+          <Item text={formation.name} under={formation.description}/>
         {/each}
       </Box>
       <Box title="Missions">
         {#each missions as mission}
           <div class="mission">
-            <div class="title">{mission.title}</div>
-            <div class="date">Depuis {mission.dateDebut}</div>
-            <div class="desc">{mission.desc}</div>
+            <div class="title">{mission.employer}</div>
+            <div class="date">Depuis {mission.startDate}</div>
+            <div class="desc">{mission.description}</div>
           </div>
         {/each}
       </Box>
       <Box title="loisirs">
         {#each loisirs as loisir}
           <Item solo text={loisir.title}/>
-          {#if loisir.content}
-            {#each loisir.content as desc}
-              <div class="sub">{desc.title}</div>
+          {#if loisir.descriptions}
+            {#each loisir.descriptions as desc}
+              <div class="sub">{desc}</div>
             {/each}
           {/if}
         {/each}

@@ -2,13 +2,13 @@
   export let text = "";
   export let under = "";
   export let rating = "";
-  export let icon = false;
+  export let icon = '';
   const ratingStrings = ["Notions", "Débutant", "Familier", "Bon", "Solide", "Maîtrise"];
 </script>
 
 {#if rating.length === 0}
   <dd>
-    {#if icon}
+    {#if icon?.length}
       <img src="../assets/{icon}" alt=""/>
     {/if}
     {text}
