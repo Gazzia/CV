@@ -1,6 +1,6 @@
 <script>
   import {fade} from "svelte/transition";
-  import {openTab} from "../stores.ts";
+  import {activeTab} from "../stores.ts";
   import {headline} from "../data.ts";
 </script>
 
@@ -16,14 +16,14 @@
   <div class="tabs">
     <button
       class="tab"
-      class:active={$openTab === "infos"}
-      on:click={() => $openTab = "infos"}>
+      class:active={$activeTab === "infos"}
+      on:click={() => $activeTab = "infos"}>
       Infos
     </button>
     <button
       class="tab"
-      class:active={$openTab === "contact"}
-      on:click={() => $openTab = "contact"}>
+      class:active={$activeTab === "contact"}
+      on:click={() => $activeTab = "contact"}>
       Contact
     </button>
   </div>

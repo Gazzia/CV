@@ -5,7 +5,7 @@
 	export let under = "";
 </script>
 
-<span>
+<div class="wrapper">
 	<div class="text" class:solo>
 		{text}
 		{#if under.length}
@@ -15,10 +15,10 @@
 	{#if date.length}
 		<div class="date">{date}</div>
 	{/if}
-</span>
+</div>
 
 <style>
-	span {
+	.wrapper {
 		margin-left: 10px;
 		display: flex;
 		justify-content: space-between;

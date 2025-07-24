@@ -1,10 +1,10 @@
 <script>
-  import {openTab} from "../stores.ts";
   import {fade, fly} from "svelte/transition";
   import Box from "../components/Box.svelte";
   import Item from "../components/Item.svelte";
   import ItemList from "../components/Item_List.svelte";
   import LI from "../components/Item_LI.svelte";
+  import {activeTab} from "../stores.ts";
   import {contact, devSkillGroups, experiences, formations, loisirs, missions, skillGroups} from "../data.ts";
 
   function scrollTop() {
@@ -15,7 +15,7 @@
 <main in:fade>
   <img src="assets/blob1.svg" alt="" class="blob1"/>
   <img src="assets/blob2.svg" alt="" class="blob2"/>
-  {#if $openTab === "infos"}
+  {#if $activeTab === "infos"}
     <div class="tab" in:fly|local={{x: -500, delay: 300}} out:fly|local={{x: -500}}>
       <Box title="Compétences techniques">
         {#each devSkillGroups as skillGroup}
@@ -76,10 +76,10 @@
         {/each}
       </Box>
       <div class="backToTop_wrapper">
-        <div class="backToTop" on:click={() => scrollTop()}>
-          <div class="label">Retour en haut</div>
+        <button class="backToTop" on:click={() => scrollTop()}>
+          Retour en haut
           <img src="assets/arrow-up.svg" alt=""/>
-        </div>
+        </button>
       </div>
     </div>
   {:else}
@@ -154,6 +154,8 @@
   }
 
   .backToTop {
+    border: none;
+    font-family: inherit;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
